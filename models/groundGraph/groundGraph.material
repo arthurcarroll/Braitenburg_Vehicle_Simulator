@@ -1,0 +1,31 @@
+material 1269008913_1_Material4
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.819607843137255 0.819607843137255 0.819607843137255
+      diffuse 0.819607843137255 0.819607843137255 0.819607843137255
+      specular 0.983529411764706 0.983529411764706 0.983529411764706 15.0
+      emissive 0.0 0.0 0.0
+      // texture size: 196.850393700787, 196.850393700787
+      texture_unit
+      {
+        texture 1269008913_1_ground2.png
+      }
+    }
+  }
+}
+material 1269008913_SketchupDefault
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.8 0.8 0.8
+      diffuse 0.8 0.8 0.8
+      specular 0.96 0.96 0.96 15.0
+      emissive 0.0 0.0 0.0
+    }
+  }
+}

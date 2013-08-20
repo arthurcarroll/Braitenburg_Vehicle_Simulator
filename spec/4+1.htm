@@ -1,0 +1,709 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" 
+lang="en"><head>
+
+
+<title>4+1 Architectural View Model - Wikipedia, the free encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="generator" content="MediaWiki 1.16alpha-wmf">
+<link rel="canonical" 
+href="http://en.wikipedia.org/wiki/4%2B1_Architectural_View_Model">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" 
+href="http://en.wikipedia.org/w/index.php?title=4%2B1_Architectural_View_Model&amp;action=edit">
+<link rel="edit" title="Edit this page" 
+href="http://en.wikipedia.org/w/index.php?title=4%2B1_Architectural_View_Model&amp;action=edit">
+<link rel="apple-touch-icon" 
+href="http://en.wikipedia.org/apple-touch-icon.png">
+<link rel="shortcut icon" href="http://en.wikipedia.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" 
+href="http://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia 
+(en)">
+<link rel="copyright" 
+href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/rss+xml" title="Wikipedia RSS 
+Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=rss">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom 
+Feed" 
+href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="4+1_files/shared.css" type="text/css" 
+media="screen">
+<link rel="stylesheet" href="4+1_files/commonPrint.css" type="text/css" 
+media="print">
+<link rel="stylesheet" href="4+1_files/main.css" type="text/css" 
+media="screen">
+<link rel="stylesheet" href="4+1_files/main_002.css" type="text/css" 
+media="handheld">
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/monobook/IE50Fixes.css?257z23" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/monobook/IE55Fixes.css?257z23" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/monobook/IE60Fixes.css?257z23" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="http://bits.wikimedia.org/skins-1.5/monobook/IE70Fixes.css?257z23" type="text/css" media="screen" /><![endif]-->
+<link rel="stylesheet" href="4+1_files/index_003.css" type="text/css" 
+media="all">
+<link rel="stylesheet" href="4+1_files/index_005.css" type="text/css" 
+media="print">
+<link rel="stylesheet" href="4+1_files/index_002.css" type="text/css" 
+media="handheld">
+<link rel="stylesheet" href="4+1_files/index_004.css" type="text/css" 
+media="all">
+<link rel="stylesheet" href="4+1_files/index.css" type="text/css" 
+media="all">
+<script type="text/javascript">
+var skin="monobook",
+stylepath="http://bits.wikimedia.org/skins-1.5",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://en.wikipedia.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="4+1_Architectural_View_Model",
+wgTitle="4+1 Architectural View Model",
+wgAction="view",
+wgArticleId=11151650,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=335956128,
+wgVersion="1.16alpha-wmf",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Wikipedia", "5": "Wikipedia talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Portal", "101": "Portal talk", "108": "Book", "109": "Book talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "wikipedia": 4, "wikipedia_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "portal": 100, "portal_talk": 101, "book": 108, "book_talk": 109, "wp": 4, "wt": 5, "image": 6, "image_talk": 7},
+wgMWSuggestTemplate="http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgDBname="enwiki",
+wgSearchNamespaces=[0],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[],
+wgTrackingToken="6f168b1588bff246d6fabf454f05c163",
+wgClickTrackingIsThrottled=true,
+wgNotice="",
+wgNoticeLocal="";
+</script>
+<script src="4+1_files/wikibits.js" type="text/javascript"></script>
+<script src="4+1_files/ajax.js" type="text/javascript"></script>
+<script src="4+1_files/mwsuggest.js" type="text/javascript"></script>
+<script type="text/javascript" src="4+1_files/centralnotice.js"></script><style type="text/css">
+#centralNotice .siteNoticeSmall{display:none;}
+#centralNotice .siteNoticeSmallAnon{display:none;}
+#centralNotice .siteNoticeSmallUser{display:none;}
+#centralNotice.collapsed .siteNoticeBig{display:none;}
+#centralNotice.collapsed .siteNoticeSmall{display:block;}
+#centralNotice.collapsed .siteNoticeSmallUser{display:block;}
+#centralNotice.collapsed .siteNoticeSmallAnon{display:block;}
+#centralNotice.anonnotice .siteNoticeSmallUser{display:none !important;}
+#centralNotice.usernotice .siteNoticeSmallAnon{display:none !important;}
+</style>
+
+
+<!--[if lt IE 7]><script type="text/javascript" src="http://bits.wikimedia.org/skins-1.5/common/IEFixes.js?257z23"></script>
+	<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+<script src="4+1_files/index_002.php" type="text/javascript"></script><script type="text/javascript" src="4+1_files/index.php"></script>
+
+<style type="text/css">#bodyContent { position:relative; } 
+.topicon { position:absolute; top:-2em !important;}
+#coordinates{ position:absolute; top:1px !important; right:0px !important;}</style></head><body
+ class="mediawiki ltr ns-0 ns-subject page-4_1_Architectural_View_Model 
+skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content"><div style="visibility: hidden; display: none; width:
+ 602px; height: 402px; margin: 0px; padding: 0px; background-color: 
+white; position: absolute; right: 2em; top: 1em; border: 1px solid gray;
+ z-index: 13;"><iframe style="z-index: 14; position: absolute; right: 
+1px; top: 1px; width: 600px; height: 400px; margin: 0px; padding: 0px;" 
+frameborder="0" scrolling="no"></iframe><img style="z-index: 15; 
+position: absolute; right: 11px; top: 9px; width: 18px; cursor: 
+pointer;" src="4+1_files/Button_hide.png" title="close"></div>
+		<a id="top"></a>
+		<div id="siteNotice"><script type="text/javascript">if (wgNotice != '') document.writeln(wgNotice);</script><div
+ id="centralNotice" class="expanded anonnotice"><style type="text/css"> 
+/*
+Styles for  Notices
+*/
+
+.notice-wrapper-stew2010-vote, .notice-collapsed-wrapper-stew2010-vote {
+    width: 100%;
+    margin: 2px auto 0;
+    padding: 0;
+    background: #DDD;
+    font-family: 'Arial', 'Helvetica', 'Tahoma', sans-serif;
+    font-size: 1.0em;
+    font-weight: 200;
+    color: #333;
+}
+
+.notice-wrapper-stew2010-vote {
+    border: 1px solid #BBB;
+    background: #FCFCFC;
+    text-align: left;
+    font-size: 1.0em;
+}
+
+.notice-wrapper-stew2010-vote a {
+    color: #006699;
+}
+
+.trans-box {
+    padding: 0;
+    text-align: right;
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+
+.toggle-box {
+    text-align: right;
+    font-size: 0.8em;
+    padding: 0;
+}
+
+.notice-text-stew2010-vote {
+    margin: 0 auto 5px;
+    padding: 2px 1px 4px;
+    font-size: 1.0em;
+}
+
+.line-ht-fix {
+    line-height: 1em;
+}
+
+#centralNotice.anonnotice .siteNoticeUser,
+#centralNotice.collapsed .siteNoticeUser {
+    display:none !important;
+}
+</style>
+
+<table class="siteNoticeUser notice-wrapper-stew2010-vote" 
+id="notice-wrapper-stew2010-vote">
+   <tbody><tr>
+      <td>
+         <div class="notice-text-stew2010-vote">
+            The Wikimedia Foundation's 2010 steward election has 
+started. <a 
+href="http://meta.wikimedia.org/wiki/Stewards/elections_2010">Please 
+vote.</a>
+         </div>
+      </td>
+      <td class="line-ht-fix">
+         <span class="toggle-box">
+            [<a href="#" onclick="toggleNotice();return false">Hide</a>]
+         </span><br>
+         <span class="trans-box">
+            [<a 
+href="http://meta.wikimedia.org/wiki/Stewards/elections_2010/Guidelines#Translators">Help
+ us with translations!</a>]
+         </span>
+      </td>
+   </tr>
+</tbody></table>
+<div class="siteNoticeSmallAnon notice-collapsed-wrapper-stew2010-vote">
+</div>
+
+<script type="text/javascript">
+var wgHideStewardVoteNotice = {
+	'notice':null,
+	'min_edit_count':600, // minimum crosswiki edit count for eligibility
+	'min_registration':'2009-11-01T00:00:00Z', // minimum local registration timestamp for eligibility
+	'cookie_key':'StewardVoteEligible_r7',
+	
+	/*********
+	** Log error
+	*********/
+	'log':function( text ) {
+		//if( !window.console || !console.log )
+		//	return;
+		//console.log( 'wgHideStewardVoteNotice: ' + text );
+	},
+	
+	/*********
+	** Initialize script
+	*********/
+	'initialize':function() {
+		/* not logged in */
+		if( !wgUserName )
+			return;
+
+		/* get elements */
+		this.notice = document.getElementById( 'notice-wrapper-stew2010-vote' );
+		if( !this.notice )
+			return this.log( 'could not locate #notice-wrapper-stew2010-vote' );
+		
+		/* already checked */
+		var pos = document.cookie.indexOf( this.cookie_key + '=' );
+		if( pos > -1 ) {
+			if( document.cookie.charAt(pos + this.cookie_key.length + 1) == 0 )
+				this.notice.style.display = 'none';
+			return;
+		}
+				
+		/* initialize AJAX request */
+		this.sendAjaxRequest();
+	},
+	
+	/*********
+	** Send AJAX request
+	*********/	
+	'sendAjaxRequest':function() {
+		var uri = wgServer + wgScriptPath + '/api.php?action=query&meta=globaluserinfo&guiprop=merged|unattached&format=json&guiuser=' + encodeURIComponent( wgUserName );
+		
+		var request = sajax_init_object();
+		request.onreadystatechange = this.onAjaxStateChange;
+		request.open( 'GET', uri, true/*asynchronous*/ );
+		request.send( '' );
+	},
+	
+	/*********
+	** Handle AJAX request state change
+	*********/
+	'onAjaxStateChange':function() {
+		/* request in progress */
+		if( this.readyState != 4 )
+			return;
+			
+		/* request failed */
+		if( this.status != 200 )
+			return this.log( 'AJAX error ' + this.status + ': ' + this.statusText );
+		
+		/* parse */
+		result = eval( '(' + this.responseText + ')' );
+		wgHideStewardVoteNotice.checkEligibility( result );
+	},
+	
+	/*********
+	** Check eligibility
+	*********/
+	'checkEligibility':function( data ) {
+		if( data.error )
+			return this.log( 'API error ' + data.error.code + ': ' + data.error.info );
+		
+		/* merge lists */
+		var wikis = data.query.globaluserinfo.merged;
+		wikis.concat( data.query.globaluserinfo.unattached );
+		if( wikis.length == 0 )
+			return this.log( 'API returned no wikis (how can this happen?)' );
+		
+		/* get edit count & oldest registration date */
+		var edit_count = 0;
+		var oldest_account = wikis[0].timestamp;
+		var eligible;
+
+		for( var i = 0, len = wikis.length; i < len; i++ ) {
+			edit_count += parseInt(wikis[i].editcount);
+			// this.log( wikis[i].wiki + ': edits=' + wikis[i].editcount + ' (total=' + edit_count + '), timestamp=' + wikis[i].timestamp );
+			if( wikis[i].timestamp < oldest_account )
+				oldest_account = wikis[i].timestamp;
+			
+			eligible = (edit_count >= this.min_edit_count && oldest_account <= this.min_registration);
+			if( eligible )
+				break;
+		}
+
+		/* hide notice and store result */
+		this.log( 'checked likely eligibility: ' + eligible + ' (' + edit_count + ' edits, oldest account ' + oldest_account + ')' );
+		if( !eligible ) {
+			this.setCookie( this.cookie_key, '0' );
+			this.notice.style.display = 'none';
+		}
+		else
+			this.setCookie( this.cookie_key, '1' );
+	},
+	
+	/*********
+	** Set cookie
+	*********/
+	'setCookie':function( key, value ) {
+		// set expiry to end of election
+		var expiryDate = new Date();
+		expiryDate.setDate( 29 );
+		
+		// set cookie
+		document.cookie = key + '=' + value + ';expires=' + expiryDate.toGMTString();
+	}
+}
+wgHideStewardVoteNotice.initialize();
+</script></div>
+</div>		<h1 id="firstHeading" class="firstHeading">4+1 Architectural 
+View Model</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Wikipedia, the free encyclopedia</h3>
+			<div id="contentSub">&nbsp;&nbsp;(Redirected from <a 
+href="http://en.wikipedia.org/w/index.php?title=4%2B1&amp;redirect=no" 
+title="4+1">4+1</a>)</div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>,
+ <a href="#searchInput">search</a></div>			<!-- start content -->
+			<div class="thumb tright">
+<div class="thumbinner" style="width: 322px;"><a 
+href="http://en.wikipedia.org/wiki/File:4%2B1_Architectural_View_Model.jpg"
+ class="image"><img alt="" 
+src="4+1_files/320px-41_Architectural_View_Model.jpg" class="thumbimage"
+ width="320" height="202"></a>
+<div class="thumbcaption">
+<div class="magnify"><a 
+href="http://en.wikipedia.org/wiki/File:4%2B1_Architectural_View_Model.jpg"
+ class="internal" title="Enlarge"><img src="4+1_files/magnify-clip.png" 
+alt="" width="15" height="11"></a></div>
+Illustration of the 4+1 Architectural View Model.</div>
+</div>
+</div>
+<p><b>4+1</b> is a <a href="http://en.wikipedia.org/wiki/View_model" 
+title="View model">view model</a> designed by <a 
+href="http://en.wikipedia.org/wiki/Philippe_Kruchten" title="Philippe 
+Kruchten">Philippe Kruchten</a> for "describing the architecture of 
+software-intensive systems, based on the use of multiple, concurrent 
+views".<sup id="cite_ref-Kru95_0-0" class="reference"><a 
+href="#cite_note-Kru95-0"><span>[</span>1<span>]</span></a></sup> The 
+views are used to describe the system from the viewpoint of different 
+stakeholders, such as end-users, developers and project managers. The 
+four views of the model are logical, development, process and physical 
+view. In addition selected <a 
+href="http://en.wikipedia.org/wiki/Use_case" title="Use case">use cases</a>
+ or scenarios are utilized to illustrate the architecture serving as the
+ 'plus one' view. Hence the model contains 4+1 views: <sup 
+id="cite_ref-Kru95_0-1" class="reference"><a href="#cite_note-Kru95-0"><span>[</span>1<span>]</span></a></sup></p>
+<ul>
+<li><i>Logical view</i>&nbsp;: The logical view is concerned with the 
+functionality that the system provides to end-users. UML Diagrams used 
+to represent the logical view include <a 
+href="http://en.wikipedia.org/wiki/Class_diagram" title="Class diagram">Class
+ diagram</a>, <a 
+href="http://en.wikipedia.org/wiki/Communication_diagram" 
+title="Communication diagram">Communication diagram</a>, <a 
+href="http://en.wikipedia.org/wiki/Sequence_diagram" title="Sequence 
+diagram">Sequence diagram</a> <sup id="cite_ref-Kontio05_1-0" 
+class="reference"><a href="#cite_note-Kontio05-1"><span>[</span>2<span>]</span></a></sup>.</li>
+</ul>
+<ul>
+<li><i>Development view</i>&nbsp;: The development view illustrates a 
+system from a programmer's perspective and is concerned with software 
+management. This view is also known as the implementation view. It uses 
+the UML <a href="http://en.wikipedia.org/wiki/Component_diagram" 
+title="Component diagram">Component diagram</a> to describe system 
+components. UML Diagrams used to represent the development view include 
+the <a href="http://en.wikipedia.org/wiki/Package_diagram" 
+title="Package diagram">Package diagram</a> <sup 
+id="cite_ref-Kontio05_1-1" class="reference"><a 
+href="#cite_note-Kontio05-1"><span>[</span>2<span>]</span></a></sup>.</li>
+</ul>
+<ul>
+<li><i>Process view</i>&nbsp;: The process view deals with the dynamic 
+aspects of the system, explains the system processes and how they 
+communicate, and focuses on the runtime behavior of the system. The 
+process view addresses concurrency, distribution, integrators, 
+performance, and scalability, etc. UML Diagrams to represent process 
+view include the <a href="http://en.wikipedia.org/wiki/Activity_diagram"
+ title="Activity diagram">Activity diagram</a><sup 
+id="cite_ref-Kontio05_1-2" class="reference"><a 
+href="#cite_note-Kontio05-1"><span>[</span>2<span>]</span></a></sup>.</li>
+</ul>
+<ul>
+<li><i>Physical view</i>&nbsp;: The physical view depicts the system 
+from a system engineer's point-of-view. It is concerned with the 
+topology of software components on the physical layer, as well as 
+communication between these components. This view is also known as the 
+deployment view. UML Diagrams used to represent physical view include 
+the <a href="http://en.wikipedia.org/wiki/Deployment_diagram" 
+title="Deployment diagram">Deployment diagram</a><sup 
+id="cite_ref-Kontio05_1-3" class="reference"><a 
+href="#cite_note-Kontio05-1"><span>[</span>2<span>]</span></a></sup>.</li>
+</ul>
+<ul>
+<li><i>Scenarios</i>&nbsp;: The description of an architecture is 
+illustrated using a small set of use cases, or scenarios which become a 
+fifth view. The scenarios describe sequences of interactions between 
+objects, and between processes. They are used to identify architectural 
+elements and to illustrate and validate the architecture design. They 
+also serve as a starting point for tests of an architecture prototype. 
+UML Diagram(s) used to represent the scenario view include the <a 
+href="http://en.wikipedia.org/wiki/Use_case_diagram" title="Use case 
+diagram">Use case diagram</a><sup id="cite_ref-Kontio05_1-4" 
+class="reference"><a href="#cite_note-Kontio05-1"><span>[</span>2<span>]</span></a></sup>.</li>
+</ul>
+<h2><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=4%2B1_Architectural_View_Model&amp;action=edit&amp;section=1"
+ title="Edit section: See also">edit</a>]</span> <span 
+class="mw-headline" id="See_also">See also</span></h2>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/View_model" title="View model">View
+ model</a></li>
+</ul>
+<h2><span class="editsection">[<a 
+href="http://en.wikipedia.org/w/index.php?title=4%2B1_Architectural_View_Model&amp;action=edit&amp;section=2"
+ title="Edit section: References">edit</a>]</span> <span 
+class="mw-headline" id="References">References</span></h2>
+<div class="references-small">
+<ol class="references">
+<li id="cite_note-Kru95-0">^ <a href="#cite_ref-Kru95_0-0"><sup><i><b>a</b></i></sup></a>
+ <a href="#cite_ref-Kru95_0-1"><sup><i><b>b</b></i></sup></a> Kruchten, 
+Philippe (1995, November). <a 
+href="http://www.cs.ubc.ca/%7Egregor/teaching/papers/4+1view-architecture.pdf"
+ class="external text" rel="nofollow">Architectural Blueprints — The 
+“4+1” View Model of Software Architecture.</a> IEEE Software 12 (6), pp.
+ 42-50.</li>
+<li id="cite_note-Kontio05-1">^ <a href="#cite_ref-Kontio05_1-0"><sup><i><b>a</b></i></sup></a>
+ <a href="#cite_ref-Kontio05_1-1"><sup><i><b>b</b></i></sup></a> <a 
+href="#cite_ref-Kontio05_1-2"><sup><i><b>c</b></i></sup></a> <a 
+href="#cite_ref-Kontio05_1-3"><sup><i><b>d</b></i></sup></a> <a 
+href="#cite_ref-Kontio05_1-4"><sup><i><b>e</b></i></sup></a> Mikko 
+Kontio (2005, February) <a 
+href="http://www.ibm.com/developerworks/wireless/library/wi-arch11/" 
+class="external text" rel="nofollow">Architectural manifesto: Designing 
+software architectures, Part 5</a></li>
+</ol>
+</div>
+<table class="metadata plainlinks ambox ambox-content" style="">
+<tbody><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><a 
+href="http://en.wikipedia.org/wiki/File:Question_book-new.svg" 
+class="image"><img alt="Question book-new.svg" 
+src="4+1_files/50px-Question_book-new.png" width="50" height="39"></a></div>
+</td>
+<td class="mbox-text" style="">This article <b>needs additional <a 
+href="http://en.wikipedia.org/wiki/Wikipedia:Citing_sources#Inline_citations"
+ title="Wikipedia:Citing sources">citations</a> for <a 
+href="http://en.wikipedia.org/wiki/Wikipedia:Verifiability" 
+title="Wikipedia:Verifiability">verification</a>.</b><br>
+<small>Please help <a 
+href="http://en.wikipedia.org/w/index.php?title=4%2B1_Architectural_View_Model&amp;action=edit"
+ class="external text" rel="nofollow">improve this article</a> by adding
+ <a href="http://en.wikipedia.org/wiki/Wikipedia:Reliable_sources" 
+title="Wikipedia:Reliable sources" class="mw-redirect">reliable 
+references</a>. Unsourced material may be <a 
+href="http://en.wikipedia.org/wiki/Template:Fact" title="Template:Fact" 
+class="mw-redirect">challenged</a> and <a 
+href="http://en.wikipedia.org/wiki/Wikipedia:Verifiability#Burden_of_evidence"
+ title="Wikipedia:Verifiability">removed</a>. <small><i>(December 2008)</i></small></small></td>
+</tr>
+</tbody></table>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 310/1000000
+Post-expand include size: 3987/2048000 bytes
+Template argument size: 1526/2048000 bytes
+Expensive parser function count: 1/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:11151650-0!1!0!default!!en!4 and timestamp 20100216052604 -->
+<div class="printfooter">
+Retrieved from "<a 
+href="http://en.wikipedia.org/wiki/4%2B1_Architectural_View_Model">http://en.wikipedia.org/wiki/4%2B1_Architectural_View_Model</a>"</div>
+			<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a 
+href="http://en.wikipedia.org/wiki/Special:Categories" 
+title="Special:Categories">Categories</a>: <span dir="ltr"><a 
+href="http://en.wikipedia.org/wiki/Category:Software_architecture" 
+title="Category:Software architecture">Software architecture</a></span></div><div
+ id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden 
+categories: <span dir="ltr"><a 
+href="http://en.wikipedia.org/wiki/Category:Articles_needing_additional_references_from_December_2008"
+ title="Category:Articles needing additional references from December 
+2008">Articles needing additional references from December 2008</a></span>
+ | <span dir="ltr"><a 
+href="http://en.wikipedia.org/wiki/Category:All_articles_needing_additional_references"
+ title="Category:All articles needing additional references">All 
+articles needing additional references</a></span></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul xml:lang="en" lang="en">
+	
+				 <li id="ca-nstab-main" class="selected"><a 
+href="http://en.wikipedia.org/wiki/4%2B1_Architectural_View_Model" 
+title="View the content page [alt-shift-c]" accesskey="c">Article</a></li>
+				 <li id="ca-talk"><a 
+href="http://en.wikipedia.org/wiki/Talk:4%2B1_Architectural_View_Model" 
+title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-edit"><a 
+href="http://en.wikipedia.org/w/index.php?title=4%2B1_Architectural_View_Model&amp;action=edit"
+ title="You can edit this page. 
+Please use the preview button before saving. [alt-shift-e]" 
+accesskey="e">Edit this page</a></li>
+				 <li id="ca-history"><a 
+href="http://en.wikipedia.org/w/index.php?title=4%2B1_Architectural_View_Model&amp;action=history"
+ title="Past versions of this page [alt-shift-h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul xml:lang="en" lang="en">
+				<li id="pt-optin-try"><a 
+href="http://en.wikipedia.org/w/index.php?title=Special:UsabilityInitiativeOptIn&amp;from=4%2B1_Architectural_View_Model"
+ title="Try out new features" class="no-text-transform">Try Beta</a></li>
+				<li id="pt-login"><a 
+href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=4%2B1_Architectural_View_Model"
+ title="You are encouraged to log in; however, it is not mandatory. 
+[alt-shift-o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: 
+url(&quot;http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png&quot;);"
+ href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main 
+page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5 xml:lang="en" lang="en">Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage-description"><a 
+href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page
+ [alt-shift-z]" accesskey="z">Main page</a></li>
+				<li id="n-contents"><a 
+href="http://en.wikipedia.org/wiki/Portal:Contents" title="Guides to 
+browsing Wikipedia">Contents</a></li>
+				<li id="n-featuredcontent"><a 
+href="http://en.wikipedia.org/wiki/Portal:Featured_content" 
+title="Featured content — the best of Wikipedia">Featured content</a></li>
+				<li id="n-currentevents"><a 
+href="http://en.wikipedia.org/wiki/Portal:Current_events" title="Find 
+background information on current events">Current events</a></li>
+				<li id="n-randompage"><a 
+href="http://en.wikipedia.org/wiki/Special:Random" title="Load a random 
+article [alt-shift-x]" accesskey="x">Random article</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5 xml:lang="en" lang="en"><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/w/index.php" id="searchform">
+				<input name="title" value="Special:Search" type="hidden">
+				<input autocomplete="off" id="searchInput" title="Search Wikipedia" 
+accesskey="f" name="search">
+				<input name="go" class="searchButton" id="searchGoButton" value="Go"
+ title="Go to a page with this exact name if one exists" type="submit">&nbsp;
+
+				<input name="fulltext" class="searchButton" id="mw-searchButton" 
+value="Search" title="Search Wikipedia for this text" type="submit">
+			</form>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-interaction">
+		<h5 xml:lang="en" lang="en">Interaction</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-aboutsite"><a 
+href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Find out 
+about Wikipedia">About Wikipedia</a></li>
+				<li id="n-portal"><a 
+href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal" 
+title="About the project, what you can do, where to find things">Community
+ portal</a></li>
+				<li id="n-recentchanges"><a 
+href="http://en.wikipedia.org/wiki/Special:RecentChanges" title="The 
+list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent 
+changes</a></li>
+				<li id="n-contact"><a 
+href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to 
+contact Wikipedia">Contact Wikipedia</a></li>
+				<li id="n-sitesupport"><a 
+href="http://wikimediafoundation.org/wiki/Support_Wikipedia/en" 
+title="Support us">Donate to Wikipedia</a></li>
+				<li id="n-help"><a href="http://en.wikipedia.org/wiki/Help:Contents"
+ title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5 xml:lang="en" lang="en">Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a 
+href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/4%2B1_Architectural_View_Model"
+ title="List of all English Wikipedia pages containing links to this 
+page [alt-shift-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a 
+href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/4%2B1_Architectural_View_Model"
+ title="Recent changes in pages linked from this page [alt-shift-k]" 
+accesskey="k">Related changes</a></li>
+<li id="t-upload"><a 
+href="http://en.wikipedia.org/wiki/Wikipedia:Upload" title="Upload files
+ [alt-shift-u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a 
+href="http://en.wikipedia.org/wiki/Special:SpecialPages" title="List of 
+all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a 
+href="http://en.wikipedia.org/w/index.php?title=4%2B1_Architectural_View_Model&amp;printable=yes"
+ rel="alternate" title="Printable version of this page [alt-shift-p]" 
+accesskey="p">Printable version</a></li>				<li id="t-permalink"><a 
+href="http://en.wikipedia.org/w/index.php?title=4%2B1_Architectural_View_Model&amp;oldid=335956128"
+ title="Permanent link to this revision of the page">Permanent link</a></li><li
+ id="t-cite"><a 
+href="http://en.wikipedia.org/w/index.php?title=Special:Cite&amp;page=4%2B1_Architectural_View_Model&amp;id=335956128"
+ title="Information on how to cite this page">Cite this page</a></li>			</ul>
+		</div>
+	</div>
+	<div id="p-lang" class="portlet">
+		<h5 xml:lang="en" lang="en">Languages</h5>
+		<div class="pBody">
+			<ul>
+				<li class="interwiki-de"><a 
+href="http://de.wikipedia.org/wiki/4%2B1_Sichtenmodell">Deutsch</a></li>
+				<li class="interwiki-fa"><a 
+href="http://fa.wikipedia.org/wiki/%D9%85%D8%B9%D9%85%D8%A7%D8%B1%DB%8C_%DB%B1%2B%DB%B4">فارسی</a></li>
+			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img 
+src="4+1_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"
+ width="88" height="31"></a></div>
+				<div id="f-copyrightico"><a href="http://wikimediafoundation.org/"><img
+ src="4+1_files/wikimedia-button.png" alt="Wikimedia Foundation" 
+width="88" height="31"></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 5 January 2010 at 
+06:25.<br></li>
+					<li id="copyright">Text is available under the <a rel="license" 
+href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative
+ Commons Attribution-ShareAlike License</a><a rel="license" 
+href="http://creativecommons.org/licenses/by-sa/3.0/" style="display: 
+none;"></a>;
+additional terms may apply.
+See <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of 
+Use</a> for details.<br>
+Wikipedia® is a registered trademark of the <a 
+href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>,
+ a non-profit organization.<br></li><li class="noprint"><a 
+class="internal" 
+href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+					<li id="privacy"><a 
+href="http://wikimediafoundation.org/wiki/Privacy_policy" 
+title="wikimedia:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a 
+href="http://en.wikipedia.org/wiki/Wikipedia:About" 
+title="Wikipedia:About">About Wikipedia</a></li>
+					<li id="disclaimer"><a 
+href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" 
+title="Wikipedia:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served by srv240 in 0.098 secs. --></body></html>

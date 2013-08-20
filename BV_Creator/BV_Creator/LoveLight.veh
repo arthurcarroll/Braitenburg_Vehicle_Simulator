@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+<vehicle id="LoveLight">
+		<sensor id="light" position="21" >
+		</sensor>
+		<sensor id="light" position="16" >
+		</sensor>
+		<connector  id="connector" positionOne="14" positionTwo="16" >
+		</connector>
+		<connector  id="connector" positionOne="6" positionTwo="21" >
+		</connector>
+		<motor position="14" >
+		</motor>
+		<motor position="6" >
+		</motor>
+</vehicle>
+</root>

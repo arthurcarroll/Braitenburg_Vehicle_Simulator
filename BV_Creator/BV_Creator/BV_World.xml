@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<world>
+	<vehicle id="Love">
+		<sensor type="Light">
+			<p>10</p>
+		</sensor>
+		<sensor type="Light">
+			<p>12</p>
+		</sensor>
+		<sensor type="Sound">
+			<p>13</p>
+		</sensor>
+		<sensor type="Sound">
+			<p>14</p>
+		</sensor>
+		<connector type="1:1">
+			<p1>10</p1>
+			<p2>16</p2>
+		</connector>
+		<connector type="1:-1">
+			<p1>13</p1>
+			<p2>16</p2>
+		</connector>
+		<connector type="1:x">
+			<p1>12</p1>
+			<p2>20</p2>
+			<x>3</x>
+		</connector>
+		<connector type="1:map">
+			<p1>14</p1>
+			<p2>20</p2>
+			<map>
+				<xrange>
+					<high>4</high>
+					<low>1</low>
+				</xrange>
+				<yrange>
+					<high>10</high>
+					<low>-10</low>
+				</yrange>
+				<default>0</default>
+				<p>
+					<x>1</x>
+					<y>13</y>
+				</p>
+				<p>
+					<x>2</x>
+					<y>10</y>
+				</p>
+				<p>
+					<x>3</x>
+					<y>9</y>
+				</p>
+				<p>
+					<x>4</x>
+					<y>-8</y>
+				</p>
+			</map>
+		</connector>
+		<motor>
+			<p>16</p>
+		</motor>
+		<motor>
+			<p>20</p>
+		</motor>
+	</vehicle>
+	<obstacle type="Box">
+		<px>25</px>
+		<py>150</py>
+		<size>26</size>
+	</obstacle>
+	<obstacle type="Circle">
+		<px>25</px>
+		<py>150</py>
+		<size>60</size>
+	</obstacle>
+	<obstacle type="Triangle">
+		<px>25</px>
+		<py>150</py>
+		<size>13</size>
+		<facing>SW</facing>
+	</obstacle>
+	<stimuli type="Light">
+		<px>50</px>
+		<py>67</py>
+	</stimuli>
+	<stimuli type="Sound">
+		<px>45</px>
+		<py>20</py>
+	</stimuli>
+</world>

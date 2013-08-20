@@ -1,0 +1,103 @@
+material 1264728976_1_[Metal_Aluminum_Anodized]7
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.192156862745098 0.2 0.207843137254902
+      diffuse 0.192156862745098 0.2 0.207843137254902
+      specular 0.230588235294118 0.24 0.249411764705882 15.0
+      emissive 0.0 0.0 0.0
+      // texture size: 54.0, 54.0
+      texture_unit
+      {
+        texture 1264728976_5_Metal_Aluminum_Anodized.jpg
+      }
+    }
+  }
+}
+material 1264728976_2_Asphalt_New
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.262745098039216 0.235294117647059 0.243137254901961
+      diffuse 0.262745098039216 0.235294117647059 0.243137254901961
+      specular 0.315294117647059 0.282352941176471 0.291764705882353 15.0
+      emissive 0.0 0.0 0.0
+      // texture size: 12.0, 12.0
+      texture_unit
+      {
+        texture 1264728976_1_Asphalt_New.jpg
+      }
+    }
+  }
+}
+material 1264728976_3_[Metal_Aluminum_Anodized]6
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.411764705882353 0.427450980392157 0.447058823529412
+      diffuse 0.411764705882353 0.427450980392157 0.447058823529412
+      specular 0.494117647058823 0.512941176470588 0.536470588235294 15.0
+      emissive 0.0 0.0 0.0
+      // texture size: 54.0, 54.0
+      texture_unit
+      {
+        texture 1264728976_4_Metal_Aluminum_Anodized.jpg
+      }
+    }
+  }
+}
+material 1264728976_4_Metal_Corrogated_Shiny
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.756862745098039 0.756862745098039 0.756862745098039
+      diffuse 0.756862745098039 0.756862745098039 0.756862745098039
+      specular 0.908235294117647 0.908235294117647 0.908235294117647 15.0
+      emissive 0.0 0.0 0.0
+      // texture size: 4.0, 4.0
+      texture_unit
+      {
+        texture 1264728976_2_Metal_Corrogated_Shiny.jpg
+      }
+    }
+  }
+}
+material 1264728976_5_Metal_Panel
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.431372549019608 0.474509803921569 0.47843137254902
+      diffuse 0.431372549019608 0.474509803921569 0.47843137254902
+      specular 0.517647058823529 0.569411764705882 0.574117647058824 15.0
+      emissive 0.0 0.0 0.0
+      // texture size: 24.0, 24.0
+      texture_unit
+      {
+        texture 1264728976_3_Metal_Panel.jpg
+      }
+    }
+  }
+}
+material 1264728976_SketchupDefault
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.8 0.8 0.8
+      diffuse 0.8 0.8 0.8
+      specular 0.96 0.96 0.96 15.0
+      emissive 0.0 0.0 0.0
+    }
+  }
+}

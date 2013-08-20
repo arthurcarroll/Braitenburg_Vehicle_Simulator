@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+<vehicle id="HateLight" positionX="150"  positionY="120" >
+		<sensor id="light" position="21" >
+		</sensor>
+		<sensor id="light" position="16" >
+		</sensor>
+		<connector  id="connector" positionOne="14" positionTwo="21" >
+		</connector>
+		<connector  id="connector" positionOne="6" positionTwo="16" >
+		</connector>
+		<motor position="14" >
+		</motor>
+		<motor position="6" >
+		</motor>
+</vehicle>
+
+<vehicle id="LoveLight" positionX="190"  positionY="120" >
+		<sensor id="light" position="21" >
+		</sensor>
+		<sensor id="light" position="16" >
+		</sensor>
+		<connector  id="connector" positionOne="14" positionTwo="16" >
+		</connector>
+		<connector  id="connector" positionOne="6" positionTwo="21" >
+		</connector>
+		<motor position="14" >
+		</motor>
+		<motor position="6" >
+		</motor>
+</vehicle>
+
+<obstacle id="box" positionX="210" positionY="200" ></obstacle>
+<obstacle id="box" positionX="230" positionY="200" ></obstacle>
+<obstacle id="box" positionX="250" positionY="200" ></obstacle>
+<obstacle id="box" positionX="270" positionY="200" ></obstacle>
+<obstacle id="circle" positionX="270" positionY="220" ></obstacle>
+<obstacle id="circle" positionX="270" positionY="240" ></obstacle>
+<obstacle id="circle" positionX="270" positionY="260" ></obstacle>
+<obstacle id="circle" positionX="290" positionY="260" ></obstacle>
+<obstacle id="box" positionX="290" positionY="280" ></obstacle>
+<obstacle id="box" positionX="290" positionY="320" ></obstacle>
+<obstacle id="box" positionX="270" positionY="320" ></obstacle>
+<obstacle id="box" positionX="250" positionY="320" ></obstacle>
+<obstacle id="box" positionX="230" positionY="320" ></obstacle>
+<obstacle id="box" positionX="230" positionY="340" ></obstacle>
+<obstacle id="box" positionX="230" positionY="360" ></obstacle>
+<obstacle id="box" positionX="210" positionY="360" ></obstacle>
+<obstacle id="box" positionX="110" positionY="200" ></obstacle>
+<obstacle id="box" positionX="110" positionY="220" ></obstacle>
+<obstacle id="box" positionX="110" positionY="240" ></obstacle>
+<obstacle id="box" positionX="110" positionY="260" ></obstacle>
+<obstacle id="box" positionX="130" positionY="260" ></obstacle>
+<stimuli id="light" positionX="270" positionY="360" ></stimuli>
+<stimuli id="light" positionX="110" positionY="280" ></stimuli>
+<stimuli id="sound" positionX="250" positionY="220" ></stimuli>
+<stimuli id="sound" positionX="410" positionY="380" ></stimuli>
+</root>

@@ -1,0 +1,31 @@
+material 1264734142_1_Metal_Steel_Textured_White
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.749019607843137 0.749019607843137 0.749019607843137
+      diffuse 0.749019607843137 0.749019607843137 0.749019607843137
+      specular 0.898823529411765 0.898823529411765 0.898823529411765 15.0
+      emissive 0.0 0.0 0.0
+      // texture size: 6.0, 6.0
+      texture_unit
+      {
+        texture 1264734142_1_Metal_Steel_Textured_White.jpg
+      }
+    }
+  }
+}
+material 1264734142_SketchupDefault
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.8 0.8 0.8
+      diffuse 0.8 0.8 0.8
+      specular 0.96 0.96 0.96 15.0
+      emissive 0.0 0.0 0.0
+    }
+  }
+}

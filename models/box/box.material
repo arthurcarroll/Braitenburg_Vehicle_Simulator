@@ -1,0 +1,31 @@
+material 1264735050_1_Material3
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.172549019607843 0.282352941176471 0.619607843137255
+      diffuse 0.172549019607843 0.282352941176471 0.619607843137255
+      specular 0.207058823529412 0.338823529411765 0.743529411764706 15.0
+      emissive 0.0 0.0 0.0
+      // texture size: 39.3700787401575, 39.3700787401575
+      texture_unit
+      {
+        texture 1264735050_1_rect3229-8-61-8-9.jpg
+      }
+    }
+  }
+}
+material 1264735050_SketchupDefault
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.8 0.8 0.8
+      diffuse 0.8 0.8 0.8
+      specular 0.96 0.96 0.96 15.0
+      emissive 0.0 0.0 0.0
+    }
+  }
+}

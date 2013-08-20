@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+<vehicle id="New Vehicle" positionX="110"  positionY="300" >
+		<sensor id="sound" position="21" >
+		</sensor>
+		<sensor id="sound" position="16" >
+		</sensor>
+		<connector  id="connector" positionOne="14" positionTwo="14" >
+		</connector>
+		<connector  id="connector" positionOne="14" positionTwo="21" >
+		</connector>
+		<connector  id="connector" positionOne="6" positionTwo="16" >
+		</connector>
+</vehicle>
+
+<obstacle id="box" positionX="310" positionY="180" ></obstacle>
+<stimuli id="light" positionX="250" positionY="260" ></stimuli>
+<stimuli id="sound" positionX="350" positionY="260" ></stimuli>
+</root>

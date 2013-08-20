@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+<vehicle id="LoveLight" positionX="310"  positionY="240" >
+		<sensor id="Light" position="20" >
+		</sensor>
+		<sensor id="Light" position="17" >
+		</sensor>
+		<connector id="connector" positionOne="14" positionTwo="17" >
+		</connector>
+		<connector id="connector" positionOne="6" positionTwo="20" >
+		</connector>
+		<Motor position="14" >
+		</Motor>
+		<Motor position="6" >
+		</Motor>
+</vehicle>
+
+<vehicle id="LoveSound" positionX="150"  positionY="320" >
+		<sensor id="Sound" position="20" >
+		</sensor>
+		<sensor id="Sound" position="17" >
+		</sensor>
+		<connector id="connector" positionOne="14" positionTwo="17" >
+		</connector>
+		<connector id="connector" positionOne="6" positionTwo="20" >
+		</connector>
+		<Motor position="14" >
+		</Motor>
+		<Motor position="6" >
+		</Motor>
+</vehicle>
+
+<obstacle id="Box" positionX="330" positionY="180" ></obstacle>
+<obstacle id="Box" positionX="250" positionY="180" ></obstacle>
+<obstacle id="Box" positionX="190" positionY="240" ></obstacle>
+<obstacle id="Box" positionX="210" positionY="320" ></obstacle>
+<obstacle id="Circle" positionX="250" positionY="120" ></obstacle>
+<obstacle id="Circle" positionX="190" positionY="140" ></obstacle>
+<obstacle id="Circle" positionX="130" positionY="180" ></obstacle>
+<obstacle id="Circle" positionX="110" positionY="260" ></obstacle>
+<stimuli id="Sound" positionX="370" positionY="300" ></stimuli>
+<stimuli id="Sound" positionX="310" positionY="300" ></stimuli>
+<stimuli id="Sound" positionX="310" positionY="340" ></stimuli>
+<stimuli id="Light" positionX="150" positionY="120" ></stimuli>
+<stimuli id="Light" positionX="150" positionY="160" ></stimuli>
+<stimuli id="Light" positionX="110" positionY="220" ></stimuli>
+</root>
